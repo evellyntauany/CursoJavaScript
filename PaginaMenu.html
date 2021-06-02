@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title> Menu </title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+            <style>
+                body{
+                    margin:0 ;
+                }
+                .cabecalho{
+                    display: flex;
+                    background-color: rgb(59, 58, 58);
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 70px;
+                }
+                .menu-flex{
+                    display: flex;
+                    flex-direction:row;
+                                      
+                }
+                .espaco{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .autenticacao{
+                    display: flex;
+                    align-items: center;
+                    
+                   
+                }
+                .imagem{
+                    width: 260px;
+                    padding: 10px;
+                    margin-top: 5px;
+                }
+                .menu-toggle{
+                    display:none;
+                    background-color: rgb(138, 132, 132);
+                    color: snow;
+                }
+                li{
+                    padding: 15px;
+                    list-style-type: none;
+                    
+                }
+                .flex{
+                    padding: 30px;
+                    
+                }
+                a{
+                    color: white; 
+                    text-decoration: none;
+                    font-family: 'Oswald', sans-serif;
+                    padding:10px;
+                   
+                }
+                .botao{
+                    border-radius: 20px;
+                    padding: 5px 15px 5px 15px;
+                }
+
+                .destaque{
+                    background-color: tomato; 
+                    
+                }
+            a:active{
+                    background-color: rgb(92, 152, 243);
+                    color: rgb(59, 58, 58);
+                    padding:10px;
+                
+                }
+
+                @media screen and (max-width: 750px){
+
+                .autenticacao {
+                        display: none; 
+            }
+        }
+            @media screen and (max-width: 590px){
+
+                .menu{
+                    display: none;
+                }
+                .menu-toggle {
+                    margin-top: 20px;
+                    height: 40px;
+                    padding: 12px;
+                    display:block;          
+                    margin-left: 250px;
+                    border: none;
+                }
+        }
+
+            </style>
+
+    </head>
+
+    <body>
+        <header class="cabecalho">
+        <div class="espaco">
+            <div class="logo">
+            <a href="#inicio">
+                <img class="imagem" src="http://files.cod3r.com.br/curso-web/logo.png" alt="logo" />
+            </a>
+            </div>
+
+           <button class="menu-toggle">
+                <i class="fa fa-lg fa-bars"></i>
+            </button>
+
+            <nav class="menu">
+                <ul class="menu-flex">
+                    <li>
+                        <a href="#inicio">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="#cursos">Cursos</a>
+                    </li>
+
+                    <li>
+                        <a href="#sobre">Sobre</a>
+                    </li>
+
+                    <li>
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+            <aside class="autenticacao">
+                <a class="flex" style="padding:10px; margin-right: 10px;" href="#login">Login</a>
+                <a href="#registrar" class="felx botao destaque">Registrar</a>
+            </aside>
+        </header>
+    </body>
